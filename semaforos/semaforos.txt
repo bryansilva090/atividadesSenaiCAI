@@ -1,0 +1,48 @@
+https://www.tinkercad.com/things/0YkUiMdfmQB/editel?returnTo=%2Fdashboard
+
+
+#define pinLedAmarelo1 2
+#define pinLedVerde1 3
+#define pinLedVermelho1 6
+#define tempoLedAmarelo1 3050
+#define tempoLedVerde1 3000
+#define tempoLedVermelho1 3600
+
+#define pinLedAmarelo2 9
+#define pinLedVerde2 11
+#define pinLedVermelho2 13
+#define tempoLedAmarelo2 3000
+#define tempoLedVerde2 3030
+#define tempoLedVermelho2 3050
+
+void setup()
+{
+  pinMode (pinLedAmarelo1,OUTPUT);
+  pinMode (pinLedVerde1, OUTPUT);
+  pinMode (pinLedVermelho1, OUTPUT);
+   
+  pinMode (pinLedAmarelo2, OUTPUT);
+  pinMode (pinLedVerde2, OUTPUT);
+  pinMode (pinLedVermelho2, OUTPUT);
+}
+ void loop()
+ {
+   digitalWrite(pinLedVerde1, HIGH);
+  digitalWrite(pinLedVermelho2, HIGH);
+   delay (tempoLedVerde1);
+   delay (tempoLedVermelho2);
+   digitalWrite(pinLedVerde1, LOW);
+   digitalWrite(pinLedAmarelo1, HIGH);
+   delay (tempoLedAmarelo1);
+   digitalWrite(pinLedAmarelo1, LOW);
+   delay (tempoLedVermelho2);
+   digitalWrite(pinLedVerde2, HIGH);
+   digitalWrite(pinLedVermelho1, HIGH);
+   delay (tempoLedVerde2);
+   delay (tempoLedVermelho1);
+   digitalWrite(pinLedVerde2, LOW);
+   digitalWrite(pinLedAmarelo2, HIGH);
+   delay (tempoLedAmarelo2);
+   digitalWrite(pinLedAmarelo2, LOW);
+   digitalWrite(pinLedVermelho1, LOW);
+ }

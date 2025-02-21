@@ -1,0 +1,34 @@
+https://www.tinkercad.com/things/2SCLlKYdHr2-surprising-turing-jaagub/editel?returnTo=%2Fthings%2F2SCLlKYdHr2-surprising-turing-jaagub
+
+#define pinLedVermelho 13
+#define pinLedAmarelo 12
+#define pinLedVerde 11
+
+#define tempoLedVermelho 5000
+#define tempoLedAmarelo 3000
+#define tempoLedVerde 2000
+
+
+void setup()
+{
+  pinMode(pinLedVerde, OUTPUT);
+  pinMode(pinLedAmarelo, OUTPUT);
+  pinMode(pinLedVermelho, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(pinLedVermelho, HIGH);
+  delay (tempoLedVermelho);
+  digitalWrite(pinLedVermelho, LOW);
+  delay (tempoLedVermelho);
+  digitalWrite(pinLedVerde, HIGH);
+  delay (tempoLedVerde);
+  digitalWrite(pinLedVerde, LOW);
+  delay (tempoLedVerde);
+  digitalWrite(pinLedAmarelo, HIGH);
+  delay (tempoLedAmarelo);
+  digitalWrite(pinLedAmarelo, LOW);
+  delay (tempoLedAmarelo);
+}
+  
